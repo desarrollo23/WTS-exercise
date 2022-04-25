@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+   <main class="container">
+
+    <header class="header">
+
+        <nav class="topnav">
+            <a href="#" class="app-name">Application Name</a>
+
+            <div class="links">
+                <ul>
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="#"> About </a></li>
+                    <li><a href="#"> Contact </a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i>
+              </a>
+        </nav>
+    </header>
+
+    <section class="content">
+
+        <div class="about">
+            <h2> <span> About </span></h2>
+        </div>
+
+        <div class="description">
+            <p id="desc-about">Your application description page</p>
+        </div>
+
+        <div class="my-divs">
+            <div class="my-divs__item">
+                <div class="div1"></div>
+            </div>
+            <div class="my-divs__item">
+                <div class="div2"></div>
+            </div>
+            <div class="my-divs__item">
+                <div class="div3"></div>
+            </div>
+        </div>
+        <div class="additional-info">
+            <p>
+                Use this area to provide additional info
+            </p>
+        </div>
+        <div class="btn">
+            <button class="btn-go" id="btn-go"> Go </button>
+        </div>
+    </section>
+   </main>
+
+
+   <script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+
+   <script src="./about.js"></script>
+
+   <script>
+
+    $(document).ready(function(){
+        addEventGreenDivs();
+        
+        $( "#btn-go" ).click(function() {
+            getTextData();
+        })
+    })
+       
+   </script>
+  
+</body>
+</html>
